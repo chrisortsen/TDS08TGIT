@@ -26,4 +26,15 @@ public class Veiculo {
             super(_cor, _ano, _modelo, _placa));
         }
     }
+
+    //Criação da lista
+    ArrayList listVeiculo = new ArrayList();
+    // OBS: Para criar um método venderVeiculo, ainda na classe
+    // Veiculo, que recebe o veículo vendido com parâmetro, faça da se�guinte forma
+    public void venderVeiculo(Veiculo veiculo){
+        listVeiculo.remove(veiculo);
+    }
+
+    //Adicionando um objeto na lista
+    listVeiculo.add(veiculo);
 }
