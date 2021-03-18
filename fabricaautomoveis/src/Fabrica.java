@@ -34,5 +34,28 @@ public class Fabrica{
         System.out.println("Cor: " + carro02.getCor());
         //Imprimir as demais informacoes
     }
+
+    public void fabricarVeiculo(Carro carro){
+        Carro carro = new Veiculo();
+        carro.setNome("Audi R8");
+        carro.setCor("Preto");
+        carro.setAno("2021");
+        carro.setModelo("Audi R8");
+        carro.setPlaca("ABCD1234");
+    }
+
+    public void listVeiculo(Veiculo veiculo){
+        for(int = 0; i < listVeiculo.size();i++){
+            if(listVeiculo).get(i) instanceof Carro){
+                Carro carro = (Carro) listVeiculo.get(i);
+                System.out.println("Dados do carro: " + i);
+                System.out.println(carro.getCor());
+            }else if(listVeiculo.get(i) instanceof Moto) {
+                Moto moto = (Moto)listVeiculo.get(i);
+                System.out.println("Dados da moto: " + i);
+                System.out.println(moto.getCor());
+            }
+        }
+    }
 }
 
